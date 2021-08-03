@@ -71,6 +71,15 @@ function App() {
             width={120}
           />
         </div>
+
+        <div className="results">
+          <div className="player">
+            {playerChoice && 'player: ' + playerChoice + '!'}
+          </div>
+          <div className="computer">
+            {computerChoice && 'computer: ' + computerChoice + '!'}
+          </div>
+        </div>
       </div>
     </context.Provider>
   );

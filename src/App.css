@@ -37,3 +37,30 @@ h2 {
   color: white;
   font-size: 24px;
 }
+
+.results {
+  display: flex;
+  background-color: #272f67;
+  height: 100px;
+  max-width: 100%;
+  margin: 10px 20px;
+  border-radius: 20px;
+}
+
+.results div {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  width: 50%;
+  height: 100%;
+}
+
+.computer {
+  flex: 1;
+}
