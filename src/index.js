@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import handleGamePlay from './redux/reducers/GameReducers';
 
-const store = createStore();
+let gameHistory = [];
+const store = createStore(handleGamePlay, gameHistory);
 
 ReactDOM.render(
   <Provider store={store}>
