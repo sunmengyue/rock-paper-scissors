@@ -29,6 +29,7 @@ function App() {
     setGameHistory(
       handleGamePlay(gameHistory, handleOutcome(playerChoice, computerChoice)),
     );
+    handleScore();
   };
 
   const handleScore = () => {
@@ -41,6 +42,9 @@ function App() {
     <context.Provider value={{ gameHistory, setGameHistory }}>
       <div className="App">
         <h2>Rock Paper Scissors</h2>
+        <div className="scoreBox">
+          <h2>{score}</h2>
+        </div>
         <div className="choices">
           <img
             onClick={() => {
